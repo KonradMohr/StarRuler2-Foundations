@@ -1,19 +1,12 @@
 # Star Ruler 2: Foundations
 
-Star Ruler 2: Foundations (SRF) is a spiritual successor of the game Star Ruler 2.
+Star Ruler 2: Foundations (SRF) is the spiritual successor of the massive scale 4X/RTS set in space called Star Ruler 2. It was originally marketed to people who played games like Solaris and other space based strategy games like this. But the game leaned way into the logistics side of it to be considered a strategy based RTS game anymore. The issue was that the strategy fan-base along with veteran players of the first game did not enjoy this system, these players had to change how they would think to play the game. I do want to make something clear here, I personally enjoy these space strategy games and I have zero hate towards any of those games, my favorite of them is FreeOrion (check them out, its opensource and the game is awesome and well made).
 
-The goal of this project is to fix the many problems with the game, such as the tutorial lacking the depth it needed.
-We also hope to build a community around this specific game!
+I learned about this game recently and as a fan of logistic games, such as Factorio or Mindustry (Mindustry is also opensource. check them out to give them support), I thought this game should be brought back from the dead.
 
-Please, feel free to help support this project!
+I have already added some stuff that should allow new players to have a better time learning to play the game, such as making the tutorial go a bit more on the complex side of the game.
 
-For a bit more context:
-star Ruler 2: Foundations is the spiritual successor of the massive scale 4X/RTS set in space called Star Ruler 2. Explore dozens, hundreds,
-or even thousands of systems in a galaxy of your choosing, expand across its
-planets, exploit the resources you find, and ultimately exterminate any who
-stand in your way. The fate of your empire depends on your ability to master
-the economy, field a military, influence galactic politics, and learn what you
-can about the universe.
+Anyways, Please, feel free to help support this project!
 
 ## What is this?
 This repository contains the full source code needed to build Star Ruler 2: Foundations, and
@@ -61,9 +54,9 @@ libXRandR, and libcurl.
 
 ## FAQ
 ### Can I Play Multiplayer with Steam/GOG versions?
-Yes. The base open source version is multiplayer-compatible with the commercial versions. If you make multiplayer-incompatible
+Yes and no. The base open source version is multiplayer-compatible with the commercial versions. If you make multiplayer-incompatible
 changes to the open source version, please remember to change the MP\_VERSION identifier in scripts/definitions/version.as,
-so things do not break from people with incompatible versions trying to join each other.
+so things do not break from people with incompatible versions trying to join each other. I also hope to build a standalone server that can run larger games for long term rounds.
 
 ### Does this have the Wake of the Heralds DLC Expansion?
 Yes. The code has been modified to bypass all DLC checks and unlock it by default. The Wake of the Heralds content
