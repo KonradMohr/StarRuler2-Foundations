@@ -121,10 +121,7 @@ void init() {
 		defaultBackground.load("data/images/title_shot_BG.png");
 	}
 
-	if(hasDLC("Heralds"))
-		logo.load("data/images/heralds_logo.png");
-	else
-		logo.load("data/images/sr_logo.png");
+	logo.load("data/images/srf_logo.png");
 }
 
 void tick(double time) {
