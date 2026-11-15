@@ -1,0 +1,32 @@
+obj/lin64/as/as_jit.o: source/game/as/as_jit.cpp source/game/as/as_jit.h \
+ source/angelscript/include/angelscript.h \
+ source/angelscript/include/../source/as_scriptfunction.h \
+ source/angelscript/include/../source/as_config.h \
+ source/angelscript/include/../source/../include/angelscript.h \
+ source/angelscript/include/../source/as_memory.h \
+ source/angelscript/include/../source/as_criticalsection.h \
+ source/angelscript/include/../source/as_array.h \
+ source/angelscript/include/../source/as_string.h \
+ source/angelscript/include/../source/as_datatype.h \
+ source/angelscript/include/../source/as_tokendef.h \
+ source/angelscript/include/../source/as_atomic.h \
+ source/angelscript/include/../source/as_objecttype.h \
+ source/angelscript/include/../source/as_property.h \
+ source/angelscript/include/../source/as_scriptfunction.h \
+ source/angelscript/include/../source/as_symboltable.h \
+ source/angelscript/include/../source/as_map.h \
+ source/angelscript/include/../source/as_namespace.h \
+ source/angelscript/include/../source/as_typeinfo.h \
+ source/angelscript/include/../source/as_callfunc.h \
+ source/angelscript/include/../source/as_scriptengine.h \
+ source/angelscript/include/../source/as_objecttype.h \
+ source/angelscript/include/../source/as_module.h \
+ source/angelscript/include/../source/as_callfunc.h \
+ source/angelscript/include/../source/as_configgroup.h \
+ source/angelscript/include/../source/as_gc.h \
+ source/angelscript/include/../source/as_thread.h \
+ source/angelscript/include/../source/as_tokenizer.h \
+ source/angelscript/include/../source/as_scriptobject.h \
+ source/angelscript/include/../source/as_texts.h \
+ source/angelscript/include/../source/as_context.h \
+ source/os/include/virtual_asm.h

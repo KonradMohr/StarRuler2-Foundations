@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/konrad/Projects/StarRuler2-Source/source/glfw/cmake_install.cmake",
+		"/home/konrad/Projects/StarRuler2-Source/source/glfw/src/cmake_install.cmake",
+		"/home/konrad/Projects/StarRuler2-Source/source/glfw/examples/cmake_install.cmake",
+		"/home/konrad/Projects/StarRuler2-Source/source/glfw/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

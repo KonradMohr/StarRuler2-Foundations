@@ -170,8 +170,11 @@ class Tutorial : Map {
 
 	void initDialogue() {
 		//Prepare dialogue
-		Dialogue("TUT_INTRO")
+		Dialogue("TUT_DIS")
 			.onPass(GUIAction("Tutorial.Tutorial::HideGUI"));
+		Dialogue("TUT_DIS2");
+		Dialogue("TUT_DIS3");
+		Dialogue("TUT_INTRO");
 		Dialogue("TUT_INTRO2");
 		Dialogue("TUT_INTRO3");
 		Dialogue("TUT_CAM")

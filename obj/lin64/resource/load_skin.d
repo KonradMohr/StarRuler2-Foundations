@@ -1,0 +1,23 @@
+obj/lin64/resource/load_skin.o: source/game/resource/load_skin.cpp \
+ source/game/render/render_state.h source/game/compat/misc.h \
+ source/game/render/shader.h source/util/include/color.h \
+ source/game/main/references.h source/game/render/driver.h \
+ source/game/scene/node.h source/util/include/vec3.h \
+ source/util/include/matrix.h source/util/include/constants.h \
+ source/util/include/vec4.h source/util/include/quaternion.h \
+ source/game/util/refcount.h source/os/include/threads.h \
+ source/game/scene/animation/animator.h source/game/render/render_mesh.h \
+ source/util/include/aabbox.h source/util/include/line3d.h \
+ source/util/include/sse.h source/game/render/texture.h \
+ source/util/include/vec2.h source/util/include/image.h \
+ source/util/include/rect.h source/util/include/mesh.h \
+ source/util/include/vertex.h source/game/render/camera.h \
+ source/game/resource/library.h source/game/render/spritesheet.h \
+ source/game/gui/skin.h source/game/render/font.h \
+ source/util/include/str_util.h source/game/scripts/manager.h \
+ source/angelscript/include/angelscript.h source/game/os/driver.h \
+ source/game/os/key_consts.h source/game/mods/mod_manager.h \
+ source/game/profile/keybinds.h source/game/profile/settings.h \
+ source/game/util/generic.h source/game/resource/locale.h \
+ source/game/main/initialization.h source/util/include/num_util.h \
+ source/game/main/logging.h

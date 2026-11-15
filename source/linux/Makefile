@@ -119,7 +119,7 @@ endif
 
 #Libraries
 LDFLAGS += -lstdc++ -lGLEW -lpng -lz -lpthread
-LDFLAGS += -lm -lfreetype
+LDFLAGS += -lm -lmvec -lfreetype
 LDFLAGS += -lvorbisfile
 
 LIB_FILES += $(LIBDIR)/libangelscript.a

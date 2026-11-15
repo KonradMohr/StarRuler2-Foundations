@@ -1,0 +1,1 @@
+/usr/bin/gcc -Ofast -flto -Wl,--dependency-file=CMakeFiles/clipboard.dir/link.d CMakeFiles/clipboard.dir/clipboard.c.o CMakeFiles/clipboard.dir/__/deps/getopt.c.o -o clipboard  ../src/libglfw3.a /usr/lib/libGLU.so /usr/lib/libX11.so /usr/lib/libXrandr.so /usr/lib/libXi.so /usr/lib/libXxf86vm.so /usr/lib/librt.a -lm /usr/lib/libGL.so

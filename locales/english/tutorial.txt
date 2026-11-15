@@ -3,7 +3,48 @@ TUT_PLAYER_EMP: Terran Empire
 TUT_ENEMY_EMP: Xu'sio
 TUT_FLAGSHIP_NAME: Superion
 
+TUT_DIS_TITLE: Star Ruler 2: Foundations
+TUT_DIS_TEXT: <<|
+	[i]For new players and returning players.[/i]
 
+	This is a remaster of the game Star Ruler 2.
+	
+	The game was originally for the strategy game fanbase,
+	but the game was unintentionally built more for people who 
+	loved to work with supply lines, factories, and logistics.
+
+	Because of this, the game was advertised to the strategy game
+	fanbase, who did not enjoy the logistics side of it.
+>>
+
+TUT_DIS2_TITLE: Star Ruler 2: Foundations
+TUT_DIS2_TEXT: <<|
+	[i][/i]This version of the game aims to fix the main problems
+	the original game had, such as the tutorial here.
+
+	I do want to make a note here for those who thought this is a
+	normal strategy game, and/or are returning from the original: this game, 
+	despite being advertised as a strategy game, is a logistics and factory management
+	game.
+>>
+
+TUT_DIS3_TITLE: Star Ruler 2: Foundations
+TUT_DIS3_TEXT: <<|
+	[i]Why this remake?[/i]
+
+	I made this remake because as a logistics management game enjoyer,
+	I was sad to see this game mistreated even though it has massive
+	potential.
+
+	I also saw that this game had many problems that prevented new players
+	from joining, or caused them to quit.
+  
+	And the first thing I did to fix this was a tutorial revamp!
+
+	Anyways, that wraps up the intro to SRF! Enjoy! :) 
+	
+	- Konrad (The lead dev)
+>>
 TUT_INTRO_TITLE: 3876 CE: The Terran Empire
 TUT_INTRO_TEXT: <<|
 	[i][/i]"A glorious age dawns in the empire's fourth millennium!
@@ -176,16 +217,18 @@ TUT_EXPAND_ACT4_TEXT: <<
 
 TUT_LEVELREQS_TITLE: Planet Level Requirements
 TUT_LEVELREQS_TEXT: <<|
-	Next, we'll need to upgrade two planets. Each planet level has a growing need for more resoures of different tiers. Every planet requires a source of [b][img=ResourceClassIcons::4;22/] Water[/b], and each level requires an additional [b][img=ResourceClassIcons::3;22/] Food[/b]. On top of these, higher levels have need of a number of [b][img=ResourceClassIcons::0;22/] Tier 1[/b] and [b][img=ResourceClassIcons::1;22/] Tier 2[/b] resources.
+	Next, we'll need to upgrade two planets. Each planet level has a growing need for more resources of different tiers. Every planet requires a source of [b][img=ResourceClassIcons::4;22/] Water[/b], and each level requires an additional [b][img=ResourceClassIcons::3;22/] Food[/b]. On top of these, higher levels have need of a number of [b][img=ResourceClassIcons::0;22/] Tier 1[/b] and [b][img=ResourceClassIcons::1;22/] Tier 2[/b] resources.
 	
 	At any time, you can check what types of resources a planet will need to upgrade by [b]selecting[/b] the planet and looking in the bottom left, or by [b]double-clicking[/b] a planet and checking the bottom left panel.
+
+	[i]Sending two of the exact same resource type (like two Grains) will not work.[/i]
 >>
 
 TUT_IMPORT1_TITLE: Upgrading Planets
 TUT_IMPORT1_TEXT: <<|
 	Your new planet must reach [b]Level 1[/b] to produce and export its [b][img=ResourceClassIcons::0;22/] Tier 1 Resource[/b]. To reach level 1 and use its resource, we must import a [b][img=ResourceClassIcons::3;22/] Food[/b] and a [b][img=ResourceClassIcons::4;22/] Water[/b] resource from other planets.
 	
-	Resources can be exported anywhere within your [b][color=#8888ff]Empire[/color][/b] border. Your [b][color=#999999]Trade[/color][/b] border shows systems that will become tradeable once colonized. [b][img=ResourceClassIcons::4;22/]Water[/b] is available nearby in [b]Odatak[/b].
+	Resources can be exported anywhere within your [b][color=#8888ff]Empire[/color][/b] border. Your [b][color=#999999]Trade[/color][/b] border shows systems that will become tradeable once colonized. [b][img=ResourceClassIcons::4;22/] Water[/b] is available nearby in [b]Odatak[/b].
 >>
 TUT_IMPORT1_ACT1_TITLE: Level up the Tier 1 resource planet
 TUT_IMPORT1_ACT1_TEXT: <<|
@@ -198,6 +241,8 @@ TUT_IMPORT2_TEXT: <<|
 	Now that you've provided the resources for your planet to start becoming [b]Level 1[/b], its population will start growing. When the population level reaches the amount required for the level up, it will start producing its resource and export it to Spacewood per your earlier queued order.
 
 	To reach Level 1, your planet needs to grow to [b][img=$Population;22/] 2 population[/b].
+
+	[b]Warning: Resources are moved by physical freighters across the map. If an enemy fleet destroys them, your supply line is cut, and the planet will lose its level.[/b]
 >>
 TUT_IMPORT2_ACT1_TITLE: Level Spacewood to level 2
 TUT_IMPORT2_ACT1_TEXT: <<|
@@ -214,6 +259,8 @@ TUT_EXPAND_SUCC_TEXT: <<|
 
 	Many resources have particular [b]special effects[/b], separate to their contribution to planet levels. Be sure to read their short descriptions in the bottom left information panel, or hover over it to show a more detailed description.
 	
+	[b]If you ever need to reroute your tradelines, you can cancel an export by right-clicking the trade line on the galaxy map, or right-clicking the resource icon on the exporting planet.[/b]
+
 	Decide carefully which planets and resources to invest in leveling up to gain their benefits!
 >>
 
@@ -224,6 +271,8 @@ TUT_BUDGET_TEXT: <<|
 
 	Money, like most resources, is produced by your civilian population and
 	infrastructure. The higher a planet's population, the more money it makes.
+
+	Importing resources that provide [b]Money Pressure[/b] acts as a powerful multiplier to this base income. Route your financial resources to your highest-population planets to maximize your economy!
 >>
 TUT_BUDGET2_TITLE: Budget Cycles
 TUT_BUDGET2_TEXT: <<|
@@ -233,6 +282,7 @@ TUT_BUDGET2_TEXT: <<|
 
 	Any money not spent at the end of a budget cycle will instead be spent on
 	one of the welfare options you can choose in the resource bar.
+	Be sure to set this to Science or Development to put your leftover cash to good use!
 	
 	It is not possible to save money from one budget cycle to the next, but
 	borrowing money as an advance from an upcoming cycle is possible, at
@@ -307,7 +357,7 @@ TUT_CONQ_ACT1_TEXT: Jump your Battleship fleet into the Xaste system using its h
 TUT_CONQ_ACT2_TITLE: Eliminate Defenses
 TUT_CONQ_ACT2_TEXT: Move your fleet to Xaste IV and eliminate the defense ships in orbit.
 TUT_CONQ_ACT3_TITLE: Capture Planet
-TUT_CONQ_ACT3_TEXT: Select your fleet, then [b]right-click[/b] Xaste IV and select the "Capture" option. Wait for your fleet to finish capturing the planet.
+TUT_CONQ_ACT3_TEXT: Select your Battleship fleet again, then [b]right-click[/b] Xaste IV and select the "Capture" option. Wait for your fleet to finish capturing the planet.
 
 TUT_CAPT_TITLE: Victory!
 TUT_CAPT_TEXT: <<|
@@ -330,6 +380,8 @@ TUT_PRES_TEXT: <<|
 	Planets can only support a limited amount of pressure, dependent on their
 	total population. Importing more pressure than a planets capacity will
 	result in lost production efficiency.
+
+	[i]Note: Labor pressure turns a planet into a factory. High Labor significantly speeds up the construction of your ships and buildings across the system.[/i]
 >>
 
 TUT_BLD_TITLE: Imperial Buildings
@@ -381,6 +433,8 @@ TUT_DSG2_TEXT: <<|
 	Some subsystems have 'core' hexes: gun turrets, engine exhausts, etc.
 
 	If a core hex is destroyed in combat, the entire subsystem shuts off until it is repaired.
+
+	[i]You can also scale a placed subsystem by dragging its edges to make it larger and more efficient.[/i]
 >>
 TUT_DSG3_TITLE: Adding Armor
 TUT_DSG3_TEXT: <<|
@@ -393,7 +447,7 @@ TUT_DSG3_ACT1_TITLE: Add Plate Armor
 TUT_DSG3_ACT1_TEXT: Place at least [b]3 additional[/b] plate armor hexes by [b]left clicking[/b] on the design. You can remove any unwanted hexes by [b]right clicking[/b] them.
 TUT_DSG4_TITLE: Modifiers
 TUT_DSG4_TEXT: <<|
-	In addition to adding subsytems, it is also possible to add [b]Subsystem Modifiers[/b] inside particular subsystems. These are things like bulkheads and targeting sensors, and can improve or alter the statistics of a subsystem.
+	In addition to adding subsystems, it is also possible to add [b]Subsystem Modifiers[/b] inside particular subsystems. These are things like bulkheads and targeting sensors, and can improve or alter the statistics of a subsystem.
 
 	Be wary though, adding multiple modifiers to a subsystem can make it extremely expensive to build.
 >>
@@ -415,7 +469,7 @@ TUT_FLT_ACT2_TEXT: Click "Heavy Carrier" from the ships list on the right.
 TUT_FLT_ACT3_TITLE: Build Beamships
 TUT_FLT_ACT3_TEXT: Click the Heavy Carrier in the construction queue to highlight it, then click the [b]Beamship[/b] design to add 10 Beamships to the fleet.
 TUT_FLT_ACT4_TITLE: Build more Supports
-TUT_FLT_ACT4_TEXT: Add some more different types of support ships to the fleet under construction.
+TUT_FLT_ACT4_TEXT: Add a different type of support ship (like a Heavy Gunship or Missile Boat) to the fleet under construction.
 TUT_FLT_ACT5_TITLE: Finish Construction
 TUT_FLT_ACT5_TEXT: Notice that support ships are constructed in parallel to the flagship while the fleet finishes constructing.
 
@@ -429,7 +483,7 @@ TUT_ENG_TEXT: <<|
 	upgrade our new fleet by spending energy.
 >>
 TUT_ENG_ACT1_TITLE: Activate Artifact
-TUT_ENG_ACT1_TEXT: Select the Power Cell and click the equip button on the bottom left, or select the artifact from the quickbar in the top right.
+TUT_ENG_ACT1_TEXT: Select the Power Cell and click the equip button on the bottom left, or select the artifact from the quickbar in the top right. (expand the quickbar if it is hidden).
 TUT_ENG_ACT2_TITLE: Equip to Fleet
 TUT_ENG_ACT2_TEXT: Click your newly constructed fleet to spend 500 Energy and equip the Power Cell. This increases its combat strength.
 
@@ -567,7 +621,11 @@ TUT_DEF_TEXT: <<|
 >>
 ENTER_COMBAT: FIGHT!
 TUT_DEF2_TITLE: War!
-TUT_DEF2_TEXT: The enemy fleets have invaded our newly conquered system. We must repel them at all cost!
+TUT_DEF2_TEXT: <<|
+	The enemy fleets have invaded our newly conquered system. We must repel them at all cost!
+
+	[i]Watch your fleet's supply bar during the fight. Weapons, movement, and repairs drain it, and you must return to friendly territory to restock.[/i]
+>>
 TUT_DEF2_ACT1_TITLE: Defend the Yingmow System
 TUT_DEF2_ACT1_TEXT: Defeat all invading fleets.
 

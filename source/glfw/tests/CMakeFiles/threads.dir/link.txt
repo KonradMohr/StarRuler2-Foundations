@@ -1,0 +1,1 @@
+/usr/bin/gcc -Ofast -flto -Wl,--dependency-file=CMakeFiles/threads.dir/link.d CMakeFiles/threads.dir/threads.c.o CMakeFiles/threads.dir/__/deps/tinycthread.c.o -o threads  ../src/libglfw3.a /usr/lib/libGLU.so /usr/lib/libX11.so /usr/lib/libXrandr.so /usr/lib/libXi.so /usr/lib/libXxf86vm.so /usr/lib/librt.a -lm /usr/lib/libGL.so /usr/lib/librt.a -lm /usr/lib/libGL.so
