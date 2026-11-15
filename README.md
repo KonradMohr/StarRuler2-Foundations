@@ -12,6 +12,9 @@ Anyways, Please, feel free to help support this project!
 This repository contains the full source code needed to build Star Ruler 2: Foundations, and
 all secondary scripts, data files and assets required to run it. It is also a modified version of the game, that fixes its many problems with it.
 
+### Installing the game.
+Check [releases](https://github.com/KonradMohr/StarRuler2-Foundations/releases) for the zip with both Windows and Linux, once again I am uncertain if the Windows binary will work
+
 ## Building the Game
 The Star Ruler 2.exe contained in the main folder is just a launcher. To run
 the game you will need to build the binary for your platform from source.
@@ -41,16 +44,7 @@ Several dependencies are required to build on linux, including libpng, zlib,
 GLEW, GLU, freetype2, libvorbisfile, libvorbis, libogg, libopenal, libbz2,
 libXRandR, and libcurl.
 
-
-## Differences with Commercial Version
-* The music is not part of the open source release of Star Ruler 2. The data/music/ directory from the commercial
-  release can be copied directly into the data/ directory of an open-source build. The music will be detected and played.
-* All code for accessing the SteamWorks API has been removed. The game platform abstraction layer game\_platform.h has 
-  been kept intact, so other mod-sharing platforms could potentially be integrated into the game.
-* Code for the automatic game patcher that is part of the GOG.com release is part of the repository, but the functionality
-  is disabled, since it relies on delta updates and will not work with modified open source versions.
-* While the actual source code is probably still compatible with 32-bit platforms, project files and external dependencies for
-  32-bit builds are not included in this repository.
+I did fix the original makefile to support modern compilers, so it **SHOULD** compile fine.
 
 ## FAQ
 ### Can I Play Multiplayer with Steam/GOG versions?
@@ -58,9 +52,9 @@ Yes and no. The base open source version is multiplayer-compatible with the comm
 changes to the open source version, please remember to change the MP\_VERSION identifier in scripts/definitions/version.as,
 so things do not break from people with incompatible versions trying to join each other. I also hope to build a standalone server that can run larger games for long term rounds.
 
-### Does this have the Wake of the Heralds DLC Expansion?
-Yes. The code has been modified to bypass all DLC checks and unlock it by default. The Wake of the Heralds content
-is always available in the open-source version.
+### Does this include the full game?
+Yes it does include most of the game, besides the music. The original studio who owned the game had some issues with copyright with the game's music, because of that, there is no music.
+But, if you want to volunteer to make music for the game, I would love that!
 
 ### Is there a Community?
 Well, kind of? There is the [Steam Forums]https://steamcommunity.com/app/282590/discussions/) for the original game,
