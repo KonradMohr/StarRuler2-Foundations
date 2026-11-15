@@ -16,10 +16,8 @@ all secondary scripts, data files and assets required to run it. It is also a mo
 Check [releases](https://github.com/KonradMohr/StarRuler2-Foundations/releases) for the zip with both Windows and Linux, once again I am uncertain if the Windows binary will work
 
 ## Building the Game
-The Star Ruler 2.exe contained in the main folder is just a launcher. To run
+If you want to build the game or are downloading it with `git`. I need you to understand that the Star Ruler 2.exe contained in the main folder is just a launcher. To run
 the game you will need to build the binary for your platform from source.
-
-Currently I am uncertain if the Windows binaries and the exe will work, if there are problems running it or compiling it, please submit an issue. I will be right on it!
 
 ### Building on Windows
 You will need Visual Studio 2017 to build Star Ruler 2 on windows. Simply open the
@@ -60,6 +58,14 @@ But, if you want to volunteer to make music for the game, I would love that!
 Well, kind of? There is the [Steam Forums]https://steamcommunity.com/app/282590/discussions/) for the original game,
 and the [Discord Server for Rising Stars](https://discord.gg/9YyXgbh). 
 But for this game, I am currently working on a discord server for everyone to join!
+
+### Screenshots
+![starruler2_shot_1](images/starruler2_1.jpg)  
+![starruler2_shot_2](images/starruler2_2.jpg)  
+![starruler2_shot_3](images/starruler2_3.jpg)  
+![starruler2_shot_4](images/starruler2_4.jpg)  
+![starruler2_shot_5](images/starruler2_5.jpg)
+![starruler2_shot_6](images/starruler2_6.jpg)
 
 ## Licensing
 Star Ruler 2: Foundations source code is licensed as MIT, art assets are licensed as CC-BY-NC 2.0.
