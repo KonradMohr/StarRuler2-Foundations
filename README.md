@@ -1,5 +1,14 @@
-# Star Ruler 2
-Star Ruler 2 is a massive scale 4X/RTS set in space. Explore dozens, hundreds,
+# Star Ruler 2: Foundations
+
+Star Ruler 2: Foundations (SRF) is a spiritual successor of the game Star Ruler 2.
+
+The goal of this project is to fix the many problems with the game, such as the tutorial lacking the depth it needed.
+We also hope to build a community around this specific game!
+
+Please, feel free to help support this project!
+
+For a bit more context:
+star Ruler 2: Foundations is the spiritual successor of the massive scale 4X/RTS set in space called Star Ruler 2. Explore dozens, hundreds,
 or even thousands of systems in a galaxy of your choosing, expand across its
 planets, exploit the resources you find, and ultimately exterminate any who
 stand in your way. The fate of your empire depends on your ability to master
@@ -7,21 +16,21 @@ the economy, field a military, influence galactic politics, and learn what you
 can about the universe.
 
 ## What is this?
-This repository contains the full source code needed to build Star Ruler 2, and
-all secondary scripts, data files and assets required to run it.
-
-Blind Mind Studios has been inactive for a few years now, so we decided to
-open-source the game as a whole and allow anyone interested in how its engine works
-to tinker with it.
+This repository contains the full source code needed to build Star Ruler 2: Foundations, and
+all secondary scripts, data files and assets required to run it. It is also a modified version of the game, that fixes its many problems with it.
 
 ## Building the Game
 The Star Ruler 2.exe contained in the main folder is just a launcher. To run
 the game you will need to build the binary for your platform from source.
 
+Currently I am uncertain if the Windows binaries and the exe will work, if there are problems running it or compiling it, please submit an issue. I will be right on it!
+
 ### Building on Windows
 You will need Visual Studio 2017 to build Star Ruler 2 on windows. Simply open the
 visual studio solution in source/msvc/Star Ruler 2/, and build the "Star Ruler 2" project
 in either Debug or Non-Steam Release configuration.
+
+If you want to, you can help update the game to run on current compilers or make a installer for the game.
 
 Please note that while the built exe ends up in the bin/win64/ directory, it expects to be
 started with its working directory set to the main directory (where the
@@ -61,12 +70,12 @@ Yes. The code has been modified to bypass all DLC checks and unlock it by defaul
 is always available in the open-source version.
 
 ### Is there a Community?
-Most Star Ruler 2 community activity is centered around the [Steam Forums](https://steamcommunity.com/app/282590/discussions/)
-(it is possible to post without owning the game on steam), and the [Discord Server for Rising Stars](https://discord.gg/9YyXgbh),
-one of the largest SR2 mod projects.
+Well, kind of? There is the [Steam Forums]https://steamcommunity.com/app/282590/discussions/) for the original game,
+and the [Discord Server for Rising Stars](https://discord.gg/9YyXgbh). 
+But for this game, I am currently working on a discord server for everyone to join!
 
 ## Licensing
-Star Ruler 2 source code is licensed as MIT, art assets are licensed as CC-BY-NC 2.0.
+Star Ruler 2: Foundations source code is licensed as MIT, art assets are licensed as CC-BY-NC 2.0.
 
 Some third party code is contained in this repository as dependencies. Licenses for those projects are contained in the appropriate source folders.
 
