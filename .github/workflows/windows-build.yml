@@ -18,8 +18,9 @@ jobs:
       run: |
         Get-ChildItem -Path source/glfw/ -Recurse -File | ForEach-Object {
           $text = Get-Content $_.FullName -Raw
-          if ($text -match '_GLFW_X11') {
-            $text -replace '_GLFW_X11', '_GLFW_WIN32' | Set-Content $_.FullName
+          if ($text -match '_GLFW_X11' -or $text -match '_GLFW_GLX') {
+            $text = $text -replace '_GLFW_X11', '_GLFW_WIN32' -replace '_GLFW_GLX', '_GLFW_WGL'
+            Set-Content -Path $_.FullName -Value $text
           }
         }
 
