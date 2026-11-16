@@ -30,16 +30,14 @@ I have successfully tested and made sure the game can run on modern windows comp
 winget install Microsoft.VisualStudio.2022.BuildTools --override "--wait --add Microsoft.VisualStudio.Workload.VCTools;includeRecommended"
 ```
 2. Go into the project directory, and run:
-```poweshell
+```powershell
 build_windows.bat
 ```
-3. It may or may not be in the bin/win64 directory. But if it is, move the EXE out of it and move it to the project's root directory. Else its in the projects root directory.
-4. If it did not come with the dll files in the bin/win64, or if that directory does not get created in the compilation and it places it in the projects root, just copy the .dll files from the source to the projects root with:
+3. Look in the bin/win64 directory in the project folder, then move the EXE out of it and move it to the project's root folder.
+4. If it did not come with the .dll files in the bin/win64, just copy the .dll files from the source to the projects root with:
 ```powershell
 Copy-Item -Path "source\lib\win64\*" -Destination "idk\whatever\yur\project\root\is\lol" -Recurse
 ```
-And if it did come in the bin/win64 directory, just move them into the projects root.
-
 ### Building on Linux
 
 I have successfully fixed the Make-files for this. So you are able to compile this on modern Linux distros!
