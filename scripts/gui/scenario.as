@@ -34,7 +34,7 @@ class ScenarioWindow : GuiDraggable {
 	double flashTimer = -1.0;
 
 	ScenarioWindow() {
-		super(null, recti(0,0,550,280));
+		super(null, recti(0,0,550,380));
 		@bg = GuiBackgroundPanel(this, Alignment_Fill());
 		bg.titleColor = Color(0xb3fe00ff);
 		bg.titleStyle = SS_FullTitle;
@@ -45,7 +45,7 @@ class ScenarioWindow : GuiDraggable {
 		minButton.color = Color(0xff8080ff);
 		minButton.setIcon(Sprite(material::Minus));
 
-		@objBG = GuiSkinElement(this, Alignment(Left+8, Top+188, Right-8, Bottom-8), SS_PlainBox);
+		@objBG = GuiSkinElement(this, Alignment(Left+8, Top+260, Right-8, Bottom-8), SS_PlainBox);
 		@objBox = GuiMarkupText(objBG, Alignment(Left+4, Top+4, Right-4, Bottom-4));
 
 		@nextButton = GuiButton(this, Alignment(Right-92, Bottom-36, Right-2, Bottom-2), locale::NEXT);
