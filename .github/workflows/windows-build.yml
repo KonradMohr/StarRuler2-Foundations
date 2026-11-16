@@ -1,0 +1,24 @@
+name: Build Windows EXE
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v4
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+
+    - name: Compile the Non-Steam Release
+      run: msbuild "source/msvc/Star Ruler 2/Star Ruler 2.sln" -property:Configuration="Non-Steam Release" -property:Platform=x64
+
+    - name: Upload the compiled EXE
+      uses: actions/upload-artifact@v4
+      with:
+        name: StarRuler2-Windows-Binary
+        path: bin/win64/
