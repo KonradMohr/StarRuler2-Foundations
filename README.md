@@ -13,11 +13,7 @@ This repository contains the full source code needed to build Star Ruler 2: Foun
 all secondary scripts, data files and assets required to run it. It is also a modified version of the game, that fixes its many problems with it.
 
 ### Installing the game.
-Check [releases](https://github.com/KonradMohr/StarRuler2-Foundations/releases) for the zip with both Windows and Linux, once again I am uncertain if the Windows binary will work
-
-## Building the Game
-If you want to build the game or are downloading it with `git`. I need you to understand that the Star Ruler 2.exe contained in the main folder is just a launcher. To run
-the game you will need to build the binary for your platform from source.
+Check [releases](https://github.com/KonradMohr/StarRuler2-Foundations/releases) for the zip with both Windows and Linux.
 
 ### Building on Windows
 
