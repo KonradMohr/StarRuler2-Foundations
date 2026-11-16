@@ -21,35 +21,50 @@ the game you will need to build the binary for your platform from source.
 
 ### Building on Windows
 
-I have attempted to add make support for windows using `mingw32` but I could not figure out how to make it work.
-I use Linux so  lack the capabilities to compile it to windows as Visual Studio is not accessible for me.
+I have successfully tested and made sure the game can run on modern windows compilers. So it should compile fine now.
 
-Here were the original instructions to compile, if you want to, you can attempt to get the game to compile on modern versions of VS:
-You will need Visual Studio 2017 to build Star Ruler 2 on windows. Simply open the
-visual studio solution in source/msvc/Star Ruler 2/, and build the "Star Ruler 2" project
-in either Debug or Non-Steam Release configuration.
-Please note that while the built exe ends up in the bin/win64/ directory, it expects to be
-started with its working directory set to the main directory (where the
-launcher exe is). So when debugging from visual studio, make sure the 'Working
-Directory' configuration property is set to ../../..
+**INSTRUCTIONS:**
 
-**NOTE:** I am uncertain if the compile or if the binary's will still work, I will leave the old windows binaries in just in case someone wants to work with them. I apologize that I cannot port the game to windows.
+1. Install Visual Studio build tools
+```powershell
+winget install Microsoft.VisualStudio.2022.BuildTools --override "--wait --add Microsoft.VisualStudio.Workload.VCTools;includeRecommended"
+```
+2. Go into the project directory, and run:
+```poweshell
+build_windows.bat
+```
+3. It may or may not be in the bin/win64 directory. But if it is, move the EXE out of it and move it to the project's root directory. Else its in the projects root directory.
+4. If it did not come with the dll files in the bin/win64, or if that directory does not get created in the compilation and it places it in the projects root, just copy the .dll files from the source to the projects root with:
+```powershell
+Copy-Item -Path "source\lib\win64\*" -Destination "idk\whatever\yur\project\root\is\lol" -Recurse
+```
+And if it did come in the bin/win64 directory, just move them into the projects root.
 
 ### Building on Linux
 
-I have successfully fixed the compile for this. You can compile this.
+I have successfully fixed the Make-files for this. So you are able to compile this on modern Linux distros!
 
-The equivalent launcher on linux is StarRuler2.sh. To build the binary files on linux,
-make sure your working directory is set to the main directory (the one with StarRuler2.sh in it),
-then run `make -f source/linux/Makefile compile` to compile the binary.
-
-Afterward, run the `StarRuler2.sh` shell script to start the game.
-
-Several dependencies are required to build on linux, including libpng, zlib,
-GLEW, GLU, freetype2, libvorbisfile, libvorbis, libogg, libopenal, libbz2,
-libXRandR, and libcurl.
-
-I did fix the original makefile to support modern compilers, so it **SHOULD** compile fine.
+how to install required dependencies:
+**Debian / Ubuntu / Linux Mint:**
+```bash
+sudo apt install build-essential cmake libpng-dev zlib1g-dev libglew-dev libglu1-mesa-dev libfreetype6-dev libvorbis-dev libogg-dev libopenal-dev libbz2-dev libxrandr-dev libcurl4-openssl-dev
+```
+**Arch based distros / Manjaro:**
+```bash
+sudo pacman -S base-devel cmake libpng zlib glew glu freetype2 libvorbis libogg openal bzip2 libxrandr curl
+```
+**Redhat / Fedora**
+```bash
+sudo dnf groupinstall "C Development Tools and Libraries"
+sudo dnf install cmake libpng-devel zlib-devel glew-devel mesa-libGLU-devel freetype-devel libvorbis-devel libogg-devel openal-soft-devel bzip2-devel libXrandr-devel libcurl-devel
+```
+Finally go into the project directory and run:
+```bash
+make -f source/linux/Makefile compile
+```
+It should produce a .bin file, move this to the projects root then you can run it
+**I REPEAT, PUT IT IN THE PROJECT'S ROOT THEN YOU CAN RUN IT**
+And that should do it.
 
 ## FAQ
 ### Can I Play Multiplayer with Steam/GOG versions?
@@ -64,8 +79,8 @@ Yes it does include most of the game, besides the music. The original studio who
 But, if you want to volunteer to make music for the game, I would love that!
 
 ### Is there a Community?
-Well, kind of? There is the [Steam Forums]https://steamcommunity.com/app/282590/discussions/) for the original game,
-and the [Discord Server for Rising Stars](https://discord.gg/9YyXgbh). 
+Well, kind of? There is the [Steam Forums](https://steamcommunity.com/app/282590/discussions/) for the original game,
+and the [Discord Server for Rising Stars](https://discord.gg/9YyXgbh). But they may be dead at this time.
 But for this game, I am currently working on a discord server for everyone to join!
 
 ### Screenshots
