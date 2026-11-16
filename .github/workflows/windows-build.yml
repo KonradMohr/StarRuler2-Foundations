@@ -14,8 +14,18 @@ jobs:
     - name: Setup MSBuild
       uses: microsoft/setup-msbuild@v2
 
+    - name: Fix Linux Flags
+      run: |
+        Get-ChildItem -Path source/glfw/ -Recurse -File | ForEach-Object {
+          $text = Get-Content $_.FullName -Raw
+          if ($text -match '_GLFW_X11') {
+            $text -replace '_GLFW_X11', '_GLFW_WIN32' | Set-Content $_.FullName
+          }
+        }
+
     - name: Compile the Non-Steam Release
       run: msbuild "source/msvc/Star Ruler 2/Star Ruler 2.sln" -property:Configuration="Non-Steam Release" -property:Platform=x64 -property:WindowsTargetPlatformVersion=10.0 -property:PlatformToolset=v143
+
     - name: Upload the compiled EXE
       uses: actions/upload-artifact@v4
       with:
