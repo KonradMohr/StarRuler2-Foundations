@@ -66,6 +66,9 @@ It should produce a .bin file, move this to the projects root then you can run i
 **I REPEAT, PUT IT IN THE PROJECT'S ROOT THEN YOU CAN RUN IT**
 And that should do it.
 
+### Can I suggest new features? Can I build content for the project to add to the game?
+**Yes!** Of course! I want people to help expand this game! From adding small tweaks, to massive overhauls or additions! But it needs to 1. Be thoroughly tested for bugs, 2. Should be in reasonable boundaries of what the game is, (What I mean is I am NOT adding anything crazy and far from the RTS/Stratagy/Logistics genre like a *My Little Pony* update to the game.)
+
 ## FAQ
 ### Can I Play Multiplayer with Steam/GOG versions?
 Well it may not work, the original game supported this but because of the modifications to this game, it might prevent it.
