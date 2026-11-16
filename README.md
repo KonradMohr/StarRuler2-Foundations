@@ -20,18 +20,25 @@ If you want to build the game or are downloading it with `git`. I need you to un
 the game you will need to build the binary for your platform from source.
 
 ### Building on Windows
+
+I have attempted to add make support for windows using `mingw32` but I could not figure out how to make it work.
+I use Linux so  lack the capabilities to compile it to windows as Visual Studio is not accessible for me.
+
+Here were the original instructions to compile, if you want to, you can attempt to get the game to compile on modern versions of VS:
 You will need Visual Studio 2017 to build Star Ruler 2 on windows. Simply open the
 visual studio solution in source/msvc/Star Ruler 2/, and build the "Star Ruler 2" project
 in either Debug or Non-Steam Release configuration.
-
-If you want to, you can help update the game to run on current compilers or make a installer for the game.
-
 Please note that while the built exe ends up in the bin/win64/ directory, it expects to be
 started with its working directory set to the main directory (where the
 launcher exe is). So when debugging from visual studio, make sure the 'Working
 Directory' configuration property is set to ../../..
 
+**NOTE:** I am uncertain if the compile or if the binary's will still work, I will leave the old windows binaries in just in case someone wants to work with them. I apologize that I cannot port the game to windows.
+
 ### Building on Linux
+
+I have successfully fixed the compile for this. You can compile this.
+
 The equivalent launcher on linux is StarRuler2.sh. To build the binary files on linux,
 make sure your working directory is set to the main directory (the one with StarRuler2.sh in it),
 then run `make -f source/linux/Makefile compile` to compile the binary.
