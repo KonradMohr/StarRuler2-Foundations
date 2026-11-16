@@ -46,9 +46,11 @@ I did fix the original makefile to support modern compilers, so it **SHOULD** co
 
 ## FAQ
 ### Can I Play Multiplayer with Steam/GOG versions?
-Yes and no. The base open source version is multiplayer-compatible with the commercial versions. If you make multiplayer-incompatible
-changes to the open source version, please remember to change the MP\_VERSION identifier in scripts/definitions/version.as,
-so things do not break from people with incompatible versions trying to join each other. I also hope to build a standalone server that can run larger games for long term rounds.
+Well it may not work, the original game supported this but because of the modifications to this game, it might prevent it.
+
+You might be able to host your own public game, but I have not tested if this still works, but you can host your own local games. I would recommend using this version only without mixing in the original game. Just to prevent possible crashes and bugs.
+
+I also hope to build a standalone server that can run larger games for long term games.
 
 ### Does this include the full game?
 Yes it does include most of the game, besides the music. The original studio who owned the game had some issues with copyright with the game's music, because of that, there is no music.
