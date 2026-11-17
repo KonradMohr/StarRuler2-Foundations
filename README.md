@@ -64,7 +64,7 @@ And that should do it.
 **Yes!** Of course! I want people to help expand this game! From adding small tweaks, to massive overhauls or additions! But it needs to 1. Be thoroughly tested for bugs, 2. Should be in reasonable boundaries of what the game is, (What I mean is I am NOT adding anything crazy and far from the RTS/Stratagy/Logistics genre like a *My Little Pony* update to the game.)
 
 ## FAQ
-### Can I Play Multiplayer with Steam/GOG versions?
+### Can I Play Multiplayer with original game's Steam/GOG versions?
 Well it may not work, the original game supported this but because of the modifications to this game, it might prevent it.
 
 You might be able to host your own public game, but I have not tested if this still works, but you can host your own local games. I would recommend using this version only without mixing in the original game. Just to prevent possible crashes and bugs.
